@@ -12,6 +12,7 @@ test('Things', async () => {
     await driver.sleep(3000)
     await driver.findElement(ep.fromBtn).click()
     await driver.sleep(2000)
+    await driver.findElement(ep.fromdate).click()
     await driver.findElement(ep.todate).click()
     await driver.sleep(3000)
     await driver.findElement(ep.donebtn).click()

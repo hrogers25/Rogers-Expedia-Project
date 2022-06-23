@@ -44,6 +44,8 @@ export class Expedia extends BasePage {
     checkout: By = By.xpath('(//button[@data-day="10"])[1]')
     location: By = By.xpath('//input[@id="location-field-destination"]')
     hotel: By = By.xpath('//a[@href="/Houston-Hotels-Hotel-Zaza-Houston-Museum-District.h3306.Hotel-Information?chkin=2022-07-04&chkout=2022-07-10&x_pwa=1&rfrr=HSR&pwa_ts=1655763091936&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5jb20vSG90ZWwtU2VhcmNo&useRewards=true&rm1=a1%3Ac5&regionId=1503&destination=Houston%2C+Texas%2C+United+States+of+America&destType=MARKET&neighborhoodId=553248635976385848&selected=22626937&sort=RECOMMENDED&top_dp=215&top_cur=USD&semdtl=&userIntent=&selectedRoomType=150133&selectedRatePlan=343235"]')
+    check: By = By.xpath('(//button[@data-day="12"])[1]')
+    out: By = By.xpath('(//button[@data-day="19"])[1]')
 
     //Locators below for Traveler feature Test
     travelersBtn: By = By.xpath('//button[@data-testid="travelers-field"]')
@@ -54,7 +56,7 @@ export class Expedia extends BasePage {
     increaseinfantBtn: By = By.xpath('//*[@aria-label="Increase infants in room 1"]//*[name()="svg"]//*[name()="path" and contains(@d,"M19 13h-6v")]')
     infantAge: By = By.xpath('//*[@id="infant-age-input-0-0"]/option[1]')
     dnebtn: By = By.xpath('//button[normalize-space()="Done"]')
-
+   
     //Locators below for interaction Packages Test
     packagesTab: By = By.xpath('//a[@href="?pwaLob=wizard-package-pwa"]')
     stayadded: By = By.xpath('//span[normalize-space()="Stay added"]')
@@ -70,15 +72,19 @@ export class Expedia extends BasePage {
     sortFilter: By = By.xpath('//button[@aria-label="Sort & Filter"]')
     srtfilt: By = By.xpath('(//*[@class="uitk-field-select"]/option[4])[1]')
 
-    //Locator below for Help feature Test
-    supportbtn: By = By.xpath('//a[@href="https://www.expedia.com/service/"]')
-    chatbtn: By = By.xpath('//button[@class="btn ico-btn-chatNow"]')
-    canceloption: By = By.xpath('//button[normalize-space()="See cancel options"]')
+    //Locator below for Flight Tab
+    Flighttab: By = By.xpath('//a[@href="?pwaLob=wizard-flight-pwa"]')
+    oneway: By = By.xpath('//a[@href="?flightType=oneway"]')
+    airport: By = By.xpath('//button[@aria-label="Leaving from"]')
+    flyto: By = By.xpath('//button[@aria-label="Going to"]')
+    deprt: By = By.xpath('//button[@data-stid="open-date-picker"]')
+    business: By = By.xpath('//button[@aria-label="Preferred flight class Business class"]')
+    datedeprt: By = By.xpath('(//button[@data-day="2"])[1]')
 
     //Locator below for Cruise
     cruisetab: By = By.xpath('//a[@href="?pwaLob=wizard-cruise-pwa"]')
     destination: By = By.xpath('//*[@id="cruise-destination"]/optgroup[1]/option[7]')
-    leaveto: By = By.xpath('//button[@id="d1-btn"]')
-    leavefrom: By = By.xpath('//button[@id="d2-btn"]')
+    leaveto: By = By.xpath('//button[@data-name="d1"]')
+    leavefrom: By = By.xpath('//button[@data-name="d2"]')
     open: By = By.xpath('(//button[@data-stid="open-date-picker"])[1]')
 }

@@ -11,15 +11,7 @@ test('CruiseTab', async () => {
     await driver.findElement(ep.cruisetab).click()
     await driver.findElement(ep.destination).click()
     await driver.sleep(3000)
-    await driver.findElement(ep.travelersBtn).click()
-    await driver.findElement(ep.increaseadultBtn).click()
-    await driver.sleep(3000)
-    await driver.findElement(ep.open).click()
-    await driver.sleep(3000)
-
-    
-
-
+    await driver.quit()
 })
 afterAll(async () => {
     await driver.quit()
